@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment - DOM</title>
+    <link href="Styles/CSS.css" rel="stylesheet" />
+    <script type="text/javascript" src="JS.js" defer></script>
+</head>
+<body class="all">
+    <div id="title">
+        <h1>ASSIGNMENT - DOM</h1>
+        <p id="sub">Full Stack JavaScript</p>
+    </div>
+    <hr />
+    <main>
+        <div class="accordion">
+            <section>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">Salutul</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content" style="text-align: center;">
+                                <label for="name">Te rog să introduci numele tău:</label>
+                                <input placeholder="nume" id="name" name="name" size="20" /><br />
+                                <p id="values"></p><br />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">Ceasul</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <div id="clock" onload="currentTime()"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">Vârsta</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content" style="text-align: center;">
+                            <label for="date">Te rog să introduci ziua ta de naștere:</label>
+                            <input type="date" id="birthDate" />
+                            <button type="submit">Confirma</button><br />
+                            <p id="dates"></p><br />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">Formularul <p id="formSub"></p><br /></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content" style="text-align: center;">
+                            <form onsubmit="return false;">
+                                <fieldset>
+                                    <legend>Contact us</legend>
+                                    <div>
+                                        <label>Nume</label>
+                                        <input type="text" placeholder="Nume" required id="num" />
+                                    </div><br />
+                                    <div>
+                                        <label>Adresă e-mail</label>
+                                        <input type="email" placeholder="Adresă e-mail" required id="ema"/>
+                                    </div><br />
+                                    <div>
+                                        <label>Zi naștere</label>
+                                        <input type="date" placeholder="Zi naștere" required id="bday"/>
+                                    </div><br />
+                                    <div>
+                                        <p>Genul</p>
+                                        <label for="gender1"><input id="gender1" type="radio" value="domnul" name="gender"/> Domnul</label>
+                                        <label for="gender2"><input id="gender2" type="radio" value="doamna" name="gender"/> Doamna</label>
+                                        <label for="gender3"><input id="gender3" type="radio" value="" name="gender"/> Altceva</label>
+                                        <label for="gender4"><input id="gender4" type="radio" value="" name="gender" checked/> Confidențial</label>
+                                    </div><br />
+                                    <div>
+                                        <p>Motivul contactului</p>
+                                        <label for="check1"><input id="check1" type="checkbox" value="vânzări" name="personality"> Vânzări</label>
+                                        <label for="check2"><input id="check2" type="checkbox" value="marketing" name="personality"> Marketing</label>
+                                        <label for="check3"><input id="check3" type="checkbox" value="tehnical" name="personality"> Tehnică</label>
+                                    </div><br />
+                                    <button type="submit" id="formId">Confirma</button><br />
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">Combo <p id="masa" style="text-align:center;"></p><br /></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <form onsubmit="return false;">
+                                <video autoplay muted loop id="myVideo" style="float: left;">
+                                    <source src="Multimedia/city.mp4" type="video/mp4" />
+                                </video>
+                                <fieldset>
+                                    <legend>Combo form</legend>
+                                    <div>
+                                        <label>Nume</label>
+                                        <input type="text" placeholder="Nume" required id="nume"/>
+                                    </div><br />
+                                    <div>
+                                        <label>Adresă e-mail</label>
+                                        <input type="email" placeholder="Adresă e-mail" required id="email"/>
+                                    </div><br />
+                                    <div>
+                                        <label>Zi naștere</label>
+                                        <input type="date" placeholder="Zi naștere" required id="birthDay"/>
+                                    </div><br />
+                                    <div>
+                                        <p>Vă plac</p>
+                                        <label for="gender1"><input id="gender1" type="radio" value="mașinile" name="gen" /> Mașinile</label>
+                                        <label for="gender2"><input id="gender2" type="radio" value="motocicletele" name="gen" /> Motocicletele</label>
+                                        <label for="gender3"><input id="gender3" type="radio" value="tancurile" name="gen" /> Tancurile</label>
+                                        <label for="gender4"><input id="gender4" type="radio" value="avioanele" name="gen" checked /> Avioanele</label>
+                                    </div><br />
+                                          <div>
+                                              <p>Ce culori preferați</p>
+                                              <label for="check1"><input id="check1" type="checkbox" value="verde" name="pers"> Verde</label>
+                                              <label for="check2"><input id="check2" type="checkbox" value="roșu" name="pers"> Roșu</label>
+                                              <label for="check3"><input id="check3" type="checkbox" value="albastru" name="pers"> Albastru</label>
+                                              <label for="check4"><input id="check4" type="checkbox" value="galben" name="pers"> Galben</label>
+                                              <label for="check5"><input id="check5" type="checkbox" value="mov" name="pers"> Mov</label>
+                                          </div><br />
+                                    <button type="submit" id="lastForm">Confirma</button><br />
+                                </fieldset>
+                            </form>
+                        </div>
+                        <button id="myBtn" onclick="myFunction()" style="left:90px;">Pause</button><br />
+                    </div><br />
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
