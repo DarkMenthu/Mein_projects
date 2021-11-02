@@ -1,2 +1,2 @@
 # GeneratiaTech
-The following contains the assignments for the full stack js course
+The following contains the assignments for the Full Stack JS course
