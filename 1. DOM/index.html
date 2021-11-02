@@ -18,10 +18,10 @@
         <div class="accordion">
             <section>
                 <div class="accordion-item">
-                    <div class="accordion-item-header">Salutul</div>
+                    <div class="accordion-item-header">Hi</div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content" style="text-align: center;">
-                                <label for="name">Te rog să introduci numele tău:</label>
+                                <label for="name">Please enter your name:</label>
                                 <input placeholder="nume" id="name" name="name" size="20" /><br />
                                 <p id="values"></p><br />
                         </div>
@@ -30,7 +30,7 @@
             </section>
             <section>
                 <div class="accordion-item">
-                    <div class="accordion-item-header">Ceasul</div>
+                    <div class="accordion-item-header">Clock</div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content">
                             <div id="clock" onload="currentTime()"></div>
@@ -40,10 +40,10 @@
             </section>
             <section>
                 <div class="accordion-item">
-                    <div class="accordion-item-header">Vârsta</div>
+                    <div class="accordion-item-header">Age</div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content" style="text-align: center;">
-                            <label for="date">Te rog să introduci ziua ta de naștere:</label>
+                            <label for="date">Please enter your birthday:</label>
                             <input type="date" id="birthDate" />
                             <button type="submit">Confirma</button><br />
                             <p id="dates"></p><br />
@@ -53,38 +53,38 @@
             </section>
             <section>
                 <div class="accordion-item">
-                    <div class="accordion-item-header">Formularul <p id="formSub"></p><br /></div>
+                    <div class="accordion-item-header">Form <p id="formSub"></p><br /></div>
                     <div class="accordion-item-body">
                         <div class="accordion-item-body-content" style="text-align: center;">
                             <form onsubmit="return false;">
                                 <fieldset>
                                     <legend>Contact us</legend>
                                     <div>
-                                        <label>Nume</label>
-                                        <input type="text" placeholder="Nume" required id="num" />
+                                        <label>Name</label>
+                                        <input type="text" placeholder="Name" required id="num" />
                                     </div><br />
                                     <div>
-                                        <label>Adresă e-mail</label>
-                                        <input type="email" placeholder="Adresă e-mail" required id="ema"/>
+                                        <label>E-mail address</label>
+                                        <input type="email" placeholder="E-mail" required id="ema"/>
                                     </div><br />
                                     <div>
-                                        <label>Zi naștere</label>
-                                        <input type="date" placeholder="Zi naștere" required id="bday"/>
+                                        <label>Birthday</label>
+                                        <input type="date" placeholder="birthday" required id="bday"/>
                                     </div><br />
                                     <div>
-                                        <p>Genul</p>
-                                        <label for="gender1"><input id="gender1" type="radio" value="domnul" name="gender"/> Domnul</label>
-                                        <label for="gender2"><input id="gender2" type="radio" value="doamna" name="gender"/> Doamna</label>
-                                        <label for="gender3"><input id="gender3" type="radio" value="" name="gender"/> Altceva</label>
-                                        <label for="gender4"><input id="gender4" type="radio" value="" name="gender" checked/> Confidențial</label>
+                                        <p>Gender</p>
+                                        <label for="gender1"><input id="gender1" type="radio" value="mr." name="gender"/> Mr.</label>
+                                        <label for="gender2"><input id="gender2" type="radio" value="mrs." name="gender"/> Mrs.</label>
+                                        <label for="gender3"><input id="gender3" type="radio" value="" name="gender"/> Other</label>
+                                        <label for="gender4"><input id="gender4" type="radio" value="" name="gender" checked/> Confidential</label>
                                     </div><br />
                                     <div>
-                                        <p>Motivul contactului</p>
-                                        <label for="check1"><input id="check1" type="checkbox" value="vânzări" name="personality"> Vânzări</label>
+                                        <p>Contact reason</p>
+                                        <label for="check1"><input id="check1" type="checkbox" value="sales" name="personality"> Sales</label>
                                         <label for="check2"><input id="check2" type="checkbox" value="marketing" name="personality"> Marketing</label>
-                                        <label for="check3"><input id="check3" type="checkbox" value="tehnical" name="personality"> Tehnică</label>
+                                        <label for="check3"><input id="check3" type="checkbox" value="tehnical" name="personality"> Tehnical</label>
                                     </div><br />
-                                    <button type="submit" id="formId">Confirma</button><br />
+                                    <button type="submit" id="formId">Confirm</button><br />
                                 </fieldset>
                             </form>
                         </div>
@@ -103,33 +103,33 @@
                                 <fieldset>
                                     <legend>Combo form</legend>
                                     <div>
-                                        <label>Nume</label>
-                                        <input type="text" placeholder="Nume" required id="nume"/>
+                                        <label>Name</label>
+                                        <input type="text" placeholder="Name" required id="nume"/>
                                     </div><br />
                                     <div>
-                                        <label>Adresă e-mail</label>
-                                        <input type="email" placeholder="Adresă e-mail" required id="email"/>
+                                        <label>E-mail address</label>
+                                        <input type="email" placeholder="e-mail" required id="email"/>
                                     </div><br />
                                     <div>
-                                        <label>Zi naștere</label>
-                                        <input type="date" placeholder="Zi naștere" required id="birthDay"/>
+                                        <label>Birthday</label>
+                                        <input type="date" placeholder="birthday" required id="birthDay"/>
                                     </div><br />
                                     <div>
-                                        <p>Vă plac</p>
-                                        <label for="gender1"><input id="gender1" type="radio" value="mașinile" name="gen" /> Mașinile</label>
-                                        <label for="gender2"><input id="gender2" type="radio" value="motocicletele" name="gen" /> Motocicletele</label>
-                                        <label for="gender3"><input id="gender3" type="radio" value="tancurile" name="gen" /> Tancurile</label>
-                                        <label for="gender4"><input id="gender4" type="radio" value="avioanele" name="gen" checked /> Avioanele</label>
+                                        <p>Like</p>
+                                        <label for="gender1"><input id="gender1" type="radio" value="cars" name="gen" /> Cars</label>
+                                        <label for="gender2"><input id="gender2" type="radio" value="motorcycles" name="gen" /> Motorcycles</label>
+                                        <label for="gender3"><input id="gender3" type="radio" value="tanks" name="gen" /> Tanks</label>
+                                        <label for="gender4"><input id="gender4" type="radio" value="planes" name="gen" checked /> Planes</label>
                                     </div><br />
                                           <div>
-                                              <p>Ce culori preferați</p>
-                                              <label for="check1"><input id="check1" type="checkbox" value="verde" name="pers"> Verde</label>
-                                              <label for="check2"><input id="check2" type="checkbox" value="roșu" name="pers"> Roșu</label>
-                                              <label for="check3"><input id="check3" type="checkbox" value="albastru" name="pers"> Albastru</label>
-                                              <label for="check4"><input id="check4" type="checkbox" value="galben" name="pers"> Galben</label>
-                                              <label for="check5"><input id="check5" type="checkbox" value="mov" name="pers"> Mov</label>
+                                              <p>Preferred colors</p>
+                                              <label for="check1"><input id="check1" type="checkbox" value="green" name="pers"> Green</label>
+                                              <label for="check2"><input id="check2" type="checkbox" value="red" name="pers"> Red</label>
+                                              <label for="check3"><input id="check3" type="checkbox" value="blue" name="pers"> Blue</label>
+                                              <label for="check4"><input id="check4" type="checkbox" value="yellow" name="pers"> Yellow</label>
+                                              <label for="check5"><input id="check5" type="checkbox" value="purple" name="pers"> Purple</label>
                                           </div><br />
-                                    <button type="submit" id="lastForm">Confirma</button><br />
+                                    <button type="submit" id="lastForm">Confirm</button><br />
                                 </fieldset>
                             </form>
                         </div>
