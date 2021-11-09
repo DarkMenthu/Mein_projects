@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 const port = 3000
 
 mongoose.connect(
-    'mongodb+srv://dbTest:password@testing.bwsrh.mongodb.net/test?authSource=admin&replicaSet=atlas-znx4oj-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
+    'mongodb+srv://...'
 )
 
 app.set('view engine', 'ejs')
