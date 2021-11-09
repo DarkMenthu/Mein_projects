@@ -1,0 +1,54 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display:none;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #FFD700;
+}
+
+.zoom {
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#clock {
+    text-align: center;
+    color: #FFD700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.white-mode {
+    background: whitesmoke;
+    color: black;
+}
+
+body {
+    background: linear-gradient(90deg, #999, #454545);
+    color: #444;
+}
+
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
