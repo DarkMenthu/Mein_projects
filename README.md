@@ -1,2 +1,2 @@
 # Hi
-Thank you for checking my projects
+This are some small projects - nothing fancy
